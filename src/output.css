@@ -628,6 +628,22 @@ video {
   left: 1.25rem;
 }
 
+.-right-\[30px\] {
+  right: -30px;
+}
+
+.-right-\[380px\] {
+  right: -380px;
+}
+
+.-right-\[400px\] {
+  right: -400px;
+}
+
+.-right-\[410px\] {
+  right: -410px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1731,4 +1747,12 @@ video {
     padding-left: 13rem;
   }
 
-  .xl\:pl-44
+  .xl\:pl-44 {
+    padding-left: 11rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
