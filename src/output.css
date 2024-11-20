@@ -652,6 +652,14 @@ video {
   right: -390px;
 }
 
+.-right-\[470px\] {
+  right: -470px;
+}
+
+.-right-\[360px\] {
+  right: -360px;
+}
+
 .z-10 {
   z-index: 10;
 }
