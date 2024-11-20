@@ -889,6 +889,10 @@ video {
   width: 350px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -903,6 +907,10 @@ video {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
