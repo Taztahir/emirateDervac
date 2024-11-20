@@ -769,32 +769,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[200px\] {
-  margin-top: 200px;
-}
-
-.mt-\[700px\] {
-  margin-top: 700px;
-}
-
-.mt-\[600px\] {
-  margin-top: 600px;
+.ml-40 {
+  margin-left: 10rem;
 }
 
 .mt-\[500px\] {
   margin-top: 500px;
-}
-
-.ml-96 {
-  margin-left: 24rem;
-}
-
-.ml-52 {
-  margin-left: 13rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
 }
 
 .block {
