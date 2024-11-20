@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../images/favicon-emirate-.png" type="image/x-icon">
+  <title>Engine Maintenance Centre | Emirates Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="../../output.css" rel="stylesheet">
+</head>
+<body class="">
+
+<!--  Header start here-->
+
+    <header class=" w-full bg-[#f4f4f4]">
+        <nav
+        class="flex items-center justify-between lg:justify-around z-30 top-0 lg:bg-[#333333] px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8 h"
+      >
+        <a href="../../index.html" class="flex items-center ">
+          <img src="../../images/emirate-logo.svg" alt="logo" class=" lg:absolute top-0 z-10 max-md:w-24 " />
+        </a>
+
+        <div class="flex items-center gap-4">
+          <div class="bg-transparent p-2  lg:hidden" onclick="openNav()">
+            <img src="../../images/icon-hamburger.svg" alt="Hamburger image" />
+          </div>
+        </div>
+        <!-- Desktop Navigation -->
+        <ul
+          class="hidden lg:flex lg:text-sm xl:text-lg lg:items-center lg:gap-10 font-sans font-medium lg:ml-8 xl:gap-8"
+    >
+
+          <li class="relative group text-white p-2">
+            <a href="./aircraft.html" class="">Aircraft Maintenance</a>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
+              <li><a href="./line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+              <li><a href="./base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+              <li><a href="./Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+              <li><a href="./Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+              <li><a href="./Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+              <li><a href="./Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+            </ul>
+          </li>
+
+          <li class="relative group text-white p-2">
+            <a href="../Engineering-support/support.html" class="">Engineering Support</a>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
+                <li><a href="../Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                <li><a href="../Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                <li><a href="../Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                <li><a href="../Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                <li><a href="../Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                <li><a href="../Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                <li><a href="../Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+              </ul>
+          </li>
+          
+          <li class="relative group text-white p-2">
+            <a href="../Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
+                <li><a href="../Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                <li><a href="../Compliance-Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                <li><a href="../Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                <li><a href="../Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+              </ul>
+          </li>
+          <li class="text-white p-2">
+            <a href="../../Engineering-Equipment.html">Engineering Equipiment</a>
+          </li>
+          <li class="text-white p-2">
+            <a href="../../careers.html">Careers</a>
+          </li>
+        </ul>
+        <!-- End of Desktop Navigation -->
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-gray-600 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
+        >
+          <div
+            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+          >
+            <a href="javascript:void(0)" onclick="exitNav()"
+              ><img src="../../images/icon-close.svg" alt="Close logo"
+            /></a>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <nav class="container">
+            <ul class="text-center flex flex-col items-center text-2xl font-sans mt-36 sm:text-3xl ">
+                <li class="relative z-20 group text-white p-2">
+                    <a href="./aircraft.html" class="">Aircraft Maintenance</a>
+                    <!-- Dropdown -->
+                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
+                      <li><a href="./line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+                      <li><a href="./base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+                      <li><a href="./Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+                      <li><a href="./Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+                      <li><a href="./Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+                      <li><a href="./Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="relative z-10 group text-white p-2">
+                    <a href="../Engineering-support/support.html" class="">Engineering Support</a>
+                    <!-- Dropdown -->
+                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
+                        <li><a href="../Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                        <li><a href="../Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                        <li><a href="../Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                        <li><a href="../Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                        <li><a href="../Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                        <li><a href="../Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                        <li><a href="../Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+                      </ul>
+                  </li>
+                  
+                  <li class="relative group text-white p-2">
+                    <a href="../Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+                    <!-- Dropdown -->
+                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
+                        <li><a href="../Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                        <li><a href="../Compliance-Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                        <li><a href="../Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                        <li><a href="../Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+                      </ul>
+                  </li>
+                  <li class="text-white p-2">
+                    <a href="../../Engineering-Equipment.html">Engineering Equipiment</a>
+                  </li>
+                  <li class="text-white p-2">
+                    <a href="../../careers.html">Careers</a>
+                  </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
+      ></div>
+      <!-- Header section  -->
+        <div class="md:pt-[140px] pt-10 pb-20 space-y-7 lg:pl-28 px-5 md:pl-14 xl:pl-44">
+          <h1 class="text-4xl font-semibold">Engine Maintenance Centre</h1>
+          <p class="lg:w-[450px] md:w-[300px] font-light pb-5">
+            This incorporates the Emirates Engineering Power Plant, where our expert teams service over 300 engines in the Emirates fleet.
+          </p>
+          <a href="../../Engineering-Equipment.html">
+            <button class="text-lg font-bold text-white bg-[#d71920] py-3 px-5 hover:text-[#d71920] hover:bg-white">
+            CONTACT US
+          </button>
+          </a>
+          
+        </div>
+    </header>
+<!-- Header ends here -->
+
+
+        <section class="xl:mx-44 md:mx-16 my-10 mx-5">
+            <h1 class="text-3xl font-semibold">
+              Engine Maintenance Centre Capability
+            </h1>
+            <div class="flex  justify-between">
+              <!-- links sections -->
+              <div class="md:flex flex-col font-bold text-gray-500 space-y-2 hidden">
+                <a href="./line.html">Line Maintenance</a>
+                <a href="./base.html">Base Maintenance</a>
+                <a href="./Overhaul.html">Overhaul Workshops</a>
+                <a href="./Maintenance.html" class="text-[#d71920]">Engine Maintenance Centre</a>
+                <a href="./Text.html">Engine Test Cell</a>
+                <a href="./Apperance.html">Aircraft Appearance Centre</a>
+              </div>
+              <div class="space-y-5">
+                <!-- engine maintenance centre -->
+                <div class="relative inline-block text-left md:hidden">
+                  <!-- Button -->
+                  <button
+                    class="flex justify-between my-5 mt-5 w-full border-[1px] border-gray-300 px-5 space-x-20 py-4 bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black"
+                    id="menu-button"
+                    onclick="toggleDropdown()"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                  <div>
+                    Engine Maintenance Centre
+                  </div>
+                  
+                    <svg
+                      class="-mr-1 ml-2 h-5 w-5 text-red-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                
+                  <!-- Dropdown Menu -->
+                  <div
+                    id="dropdown-menu"
+                    class="hidden right-0 mt-2 w-[100] bg-white border border-black ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                  >
+                    <div class="py-1" role="none">
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Line Maintenance
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Base Maintenance
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Overhaul Workshops
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Engine Maintenance Centre
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Engine Test Cell
+                      </a>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Aircraft Appearance Centre
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- JavaScript -->
+                <script>
+                  function toggleDropdown() {
+                    const menu = document.getElementById("dropdown-menu");
+                    menu.classList.toggle("hidden");
+                  }
+                
+                  // Close dropdown if clicked outside
+                  document.addEventListener("click", function (event) {
+                    const button = document.getElementById("menu-button");
+                    const menu = document.getElementById("dropdown-menu");
+                
+                    if (!button.contains(event.target) && !menu.contains(event.target)) {
+                      menu.classList.add("hidden");
+                    }
+                  });
+                </script>
+                
+                <div class="space-y-5">
+                  <h1 class="font-semibold text-4xl">
+                  Engine Maintenance Centre
+                </h1>
+                <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                  Emirates Airlines have embarked on the installation of a state-of-the-art maintenance facility, the Emirates Engine Maintenance Centre, with the aim of providing Emirates fleet the best in aircraft engine maintenance and repair. 
+                </p>
+                <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                  This facility, also called EEMC for short, will be located at Al Warsan in Dubai and will have the capacity to maintain, overhaul and repair GE 90, GP 7200. It aims at being the leading aircraft engine maintenance centre in the MENA region.
+                </p>
+                <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                  With an investment of US$ 120 million and constructed on a 210,000 square feet of land, it is fully operational since July 2014 with a capacity to complete Full Shop Visits of 250 to 300 engines.
+                </p>
+                <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                  It will accommodate a total of average in-processes of 30 engines with an annual capacity of 250 - 300 turbo-fan engines. It will also have an integrated state-of-the-art line-hoisting system with the capacity to handle module change and module overhaul work. 
+                </p>
+                <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                  The EEMC is designed to provide a 24/7 service 365 days a year and will be backed by a qualified and highly competent workforce. The engineering staff will have the capacity to strip, inspect and build in the same area. The capacity of the skilled staff will be further enhanced by an information and communication technology system that supports quality control in the provision of maintenance, repair and overhaul (MRO) services. 
+                </p>
+                </div>
+                <!-- propulsin plainning and logistics  -->
+                <div class="space-y-3">
+                  <h1 class="font-semibold text-4xl">
+                    Propulsion Planning and Logistics (PP&L)
+                  </h1>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    This team manages the Engine Maintenance Centre, making sure we are stocked with spares and that we’re working efficiently and cost-effectively across all areas. This includes engines, auxiliary power units, nacelle components and power plant parts, in line with the expansion plan for the Emirates fleet.
+                  </p>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    To achieve this, the PP&L team evaluates and performs feasibility studies, looking at ways we can develop and expand our in-house engine shop.
+                  </p>
+                </div>
+                <!-- engine technical services -->
+                <div class="space-y-3">
+                  <h1 class="font-semibold text-4xl">Engine Technical Services (ETS)</h1>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    This is our technical support team for the broad range of engines and auxiliary power units fitted to aircraft in the Emirates fleet, including:
+                  </p>
+                  <ul class="pl-5 text-gray-500 space-y-5">
+                    <li class="list-disc">Rolls Royce
+                      <h1 class="pt-5">Trent 500 fitted to the Airbus A340-500</h1>
+                      <h1>Trent 700 fitted to the Airbus A330-200</h1>
+                      <h1>Trent 800 fitted to the Boeing 777-200/330 aircraft</h1>
+                    </li>
+                    <li class="list-disc">General Electric
+                      <h1 class="pt-5">CF6-80C2 fitted to the Airbus A310-300F</h1>
+                      <h1>GE90-115B/110 fitted to the Boeing 777-300ER/200LR</h1>
+                    </li>
+                    <li class="list-disc">CFM International
+                      <h1 class="pt-5">
+                        CFM56-5C4/P fitted to the A340-300
+                      </h1>
+                    </li>
+                    <li class="list-disc">Honeywell GTCP
+                      <h1 class="pt-5">331-250</h1>
+                      <h1>331-350(C)</h1>
+                      <h1>331-500</h1>
+                      <h1>332-600</h1>
+                    </li>
+                    <li class="list-disc">Auxiliary power units</li>
+                  </ul>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    This team is responsible for providing technical support services to power plant and APU systems and accessories, including engine and APU condition monitoring.
+                  </p>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    This involves engine health monitoring, and developing programmes to make sure the engines are overhauled to the highest standards as efficiently as we can, and are back on the wing within deadlines to minimise costs.
+                  </p>
+                </div>
+                <!-- THe engine shop  -->
+                <div class="space-y-3">
+                  <h1  class="font-semibold text-4xl">
+                    The Engine Shops
+                  </h1>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    The Engine Shops perform module replacement, QEC/DE-QEC, modification and minor repair of all engine types used on the Emirates fleet.
+                  </p>
+                  <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+                    They also perform QEC/DE-QEC of all APU types installed on Emirates aircraft and light maintenance of all thrust reversers installed across the fleet.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+        </section>
+
+        <footer class="">
+          <img src="../../images/emirate-logo.svg" alt="" class="mx-auto relative -mb-10">
+          <div class="flex flex-col items-center text-white pt-10 bg-slate-500">
+            <div class="lg:flex flex text-sm lg:text-lg justify-evenly gap-3 font-semibold">
+              <a href="../Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
+              <a href="../Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
+              <a href="../Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
+              <a href="../../Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
+              <a href="../../careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
+            </div>
+            <div>
+              <p> &copy; 2024 dervac Hub developer. All Rights Reserved.</p>
+            </div>
+            <div class="flex my-5">
+              <img src="../../images/facebook-brands-solid.svg" alt="" class="w-5 mr-5">
+              <img src="../../images/twitter-brands-solid.svg" alt="" class="w-5 ">
+              <img src="../../images/linkedin-brands-solid.svg" alt="" class="w-5 ml-5">
+            </div>
+      
+            
+        </div>
+        </footer>
+
+
+<script>
+    function openNav() {
+    document.getElementById("sideBar").style.width = "100%";
+    document.getElementById("sideNav").style.width = "100%";
+  }
+  /*Close navigation*/
+  function exitNav() {
+    document.getElementById("sideBar").style.width = "0";
+    document.getElementById("sideNav").style.width = "0";
+  }
+  </script>
+
+</body>
+</html>

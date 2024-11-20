@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../images/favicon-emirate-.png" type="image/x-icon">
+  <title>Emirate Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="../../output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+}
+</script>
+</head>
+<body class="">
+
+<!--  Header start here-->
+
+    <header class=" overflow-hidden bg-[#3d3d3d] w-full">
+        <nav
+        class="flex w-full items-center justify-between container lg:justify-around  z-30 top-0  px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8"
+      >
+        <a href="/Dervac-Emirate/src/index.html" class="flex items-center ">
+          <img src="../../images/emirate-logo.svg" alt="logo" class=" lg:absolute top-0 z-10" />
+        </a>
+
+        <div class="flex items-center gap-4">
+          <div class="bg-transparent p-2  lg:hidden" onclick="openNav()">
+            <img src="../../images/icon-hamburger.svg" alt="Hamburger image" />
+          </div>
+        </div>
+        <!-- Desktop Navigation -->
+        <ul
+          class="hidden lg:flex lg:text-lg lg:items-center lg:gap-10 font-sans font-medium lg:ml-8 xl:gap-8"
+    >
+
+          <li class="relative group text-white p-2">
+            <a href="../Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
+              <li><a href="../Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+              <li><a href="../Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+              <li><a href="../Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+              <li><a href="../Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+              <li><a href="../Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+              <li><a href="../Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+            </ul>
+          </li>
+
+          <li class="relative group text-white p-2">
+            <a href="../Engineering-support/support.html" class="">Engineering Support</a>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
+                <li><a href="../Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                <li><a href="../Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                <li><a href="../Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                <li><a href="../Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                <li><a href="../Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                <li><a href="../Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                <li><a href="../Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+              </ul>
+          </li>
+          
+          <li class="relative group text-white p-2">
+            <a href="../Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+            <!-- Dropdown -->
+            <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
+                <li><a href="../Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                <li><a href="../Compliance-Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                <li><a href="../Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                <li><a href="../Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+              </ul>
+          </li>
+          <li class="text-white p-2">
+            <a href="/Dervac-Emirate/src/Engineering-Equipment.html">Engineering Equipiment</a>
+          </li>
+          <li class="text-white p-2">
+            <a href="/Dervac-Emirate/src/careers.html">Careers</a>
+          </li>
+        </ul>
+        <!-- End of Desktop Navigation -->
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-gray-600 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
+        >
+          <div
+            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+          >
+            <a href="javascript:void(0)" onclick="exitNav()"
+              ><img src="../../images/icon-close.svg" alt="Close logo"
+            /></a>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <nav class="container">
+            <ul class="text-center flex flex-col items-center text-2xl font-sans mt-36 sm:text-3xl ">
+                <li class="relative z-20 group text-white p-2">
+                    <a href="./pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
+                    <!-- Dropdown -->
+                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
+                      <li><a href="./pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+                      <li><a href="./pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+                      <li><a href="./pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+                      <li><a href="./pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+                      <li><a href="./pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+                      <li><a href="../Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="relative z-10 group text-white p-2">
+                    <a href="./pages/Engineering-support/support.html" class="">Engineering Support</a>
+                    <!-- Dropdown -->
+                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
+                        <li><a href="./pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                        <li><a href="./pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                        <li><a href="./pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                        <li><a href="./pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                        <li><a href="./pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                        <li><a href="./pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                        <li><a href="./pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+                      </ul>
+                  </li>
+                  
+                  <li class="relative group text-white p-2">
+                    <a href="./pages/Compliance Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+                    <!-- Dropdown -->
+                    <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
+                        <li><a href="./pages/Compliance Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                        <li><a href="./pages/Compliance Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                        <li><a href="./pages/Compliance Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                        <li><a href="./pages/Compliance Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+                      </ul>
+                  </li>
+                  <li class="text-white p-2">
+                    <a href="./Engineering-Equipment.html">Engineering Equipiment</a>
+                  </li>
+                  <li class="text-white p-2">
+                    <a href="./careers.html">Careers</a>
+                  </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
+      ></div>
+
+      <div>
+        <div class="bg-[rgb(244,244,244)] h-full">
+          <h1 class="pt-36 pl-24 text-5xl mb-8 font-semibold">Aircraft Appearance Centre</h1>
+          <p class="pl-24 text-gray-500 text-lg">We keep our aircraft looking great inside and out. The Aircraft Appearance<br> Centre is divided into a paint hangar, paint workshop, and a graphics and decal <br>shop. The paint shops are part of the Base Maintenance team.
+    
+          </p>
+          <button class="bg-red-600  text-white text-lg font-semibold py-3 px-6 ml-24 shadow-lg mt-10">Contact us</button>
+        </div>
+        
+      </div>
+        
+    </header>
+<!-- Header ends here -->
+<!-- <Ayub> -->
+
+  
+  <div class=" font-sans leading-normal tracking-normal">
+      <div class="min-h-screen flex  mt-10">
+        
+        <div class="w-1/4  p-6 ">
+          <ul class="space-y-2 font-bold text-gray-400 pl-24">
+            <li><a href="../Aircraft-maintainance/line.html">Line Maintenance</a></li>
+            <li><a href="../Aircraft-maintainance/base.html">Base Maintenance</a></li>
+            <li><a href="../Aircraft-maintainance/Overhaul.html">Overhaul Workshops</a></li>
+            <li><a href="../Aircraft-maintainance/Maintenance.html">Engine Maintenance Centre</a></li>
+            <li><a href="../Aircraft-maintainance/Text.html">Engine Test Cell</a></li>
+            <li class="text-red-600 font-bold"><a href="../Aircraft-maintainance/Apperance.html">Aircraft Appearance Centre</a></li>
+          </ul>
+        </div>
+    
+        
+        <div class="flex-1 p-8   ">
+          <h1 class="text-4xl font-semibold mb-6">Paint Workshops</h1>
+          <p class="mb-4  text-gray-500 text-lg`">
+            These teams make the aircraft shine on the tarmac. Livery, paintwork, cleanliness, and maintenance of the <br>aircraft interior are all taken care of at the Aircraft Appearance Centre (our aircraft paint facility).
+          </p>
+          <p class="mb-4  text-gray-500 text-lg">
+            The centre is divided into three areas: a paint hangar, a paint workshop, and a graphic and decal shop.
+          </p>
+    
+          
+          <div class="mb-6 ">
+            <li class="text-xl  text-gray-500 mb-2">Paint Hangar</li>
+            <p class=" text-gray-500 text-lg pl-7">
+              Our paint hangar has its own controlled environment. It’s a fully automated climate control facility, capable of accommodating any aircraft up to the Airbus A380. We use the latest technology to control the relative humidity and temperature during all aspects of the repaint phase, from paint removal through to paint application and various decorative liveries. At the same time, we exceed the standards set by the OEM.
+            </p>
+              
+          
+          </div>
+    
+          
+          <div class="  text-gray-500 text-lg">
+            <li class="text-xl font-semibold mb-2 ">Paint Shop</li>
+            <p class="pl-7">
+              These experts provide top-to-bottom paintwork on the fleet, including precision interior finishing. The paint shop is equipped with a preparation area, three temperature-controlled spray booths, as well as a wood grain design section. This is where we carry out a complete paint refurbishment of the interior seats as well as restoring multiple wood grain designs across the Emirates fleet.
+            </p>
+            <p class="pl-7">
+              The skilled technicians at the paint shop carry out all paintwork repairs from base maintenance to line maintenance. The workshops provide surface refinishing, including full paint restoration on wheel hubs, paint refurbishment on all engine components, paint renewal on interior furnishings including the paint repairs on the aircraft exterior and its components.
+            </p>
+          </div>
+          <div class="mt-6  text-gray-500">
+            <li class="text-xl font-semibold mb-2  text-gray-500">Graphics and Decal Shop</li>
+            <p class="text-gray-500 text-lg pl-7">
+              This is where we fabricate all interior placards, all exterior mandatory markings, stencils and livery markings, and all promotional aircraft decals for special occasions or celebrations. It’s likely you’ve seen these on the Emirates fleet, such as the sponsored football teams and our famous United for Wildlife decals.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+
+<!-- <Ayub> -->
+
+        
+        <footer class="">
+          <img src="../../images/emirate-logo.svg" alt="" class="mx-auto relative -mb-10">
+          <div class="flex flex-col items-center text-white pt-10 bg-slate-500">
+            <div class="lg:flex flex text-sm lg:text-lg justify-evenly gap-3 font-semibold">
+              <a href="./pages/Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
+              <a href="./pages/Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
+              <a href="./pages/Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
+              <a href="./Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
+              <a href="./careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
+            </div>
+            <div>
+              <p> &copy; 2024 dervac Hub developer. All Rights Reserved.</p>
+            </div>
+            <div class="flex my-5">
+              <img src="../../images/facebook-brands-solid.svg" alt="" class="w-5 mr-5">
+              <img src="../../images/twitter-brands-solid.svg" alt="" class="w-5 ">
+              <img src="../../images/linkedin-brands-solid.svg" alt="" class="w-5 ml-5">
+            </div>
+      
+            
+        </div>
+        </footer>
+
+
+<script>
+    function openNav() {
+    document.getElementById("sideBar").style.width = "100%";
+    document.getElementById("sideNav").style.width = "100%";
+  }
+  /*Close navigation*/
+  function exitNav() {
+    document.getElementById("sideBar").style.width = "0";
+    document.getElementById("sideNav").style.width = "0";
+  }
+  </script>
+
+</body>
+</html>
