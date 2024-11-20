@@ -648,6 +648,10 @@ video {
   right: -0px;
 }
 
+.-right-\[390px\] {
+  right: -390px;
+}
+
 .z-10 {
   z-index: 10;
 }
