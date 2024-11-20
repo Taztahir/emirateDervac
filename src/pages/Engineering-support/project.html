@@ -4,32 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../../images/favicon-emirate-.png" type="image/x-icon">
-  <title>Emirate Engineering</title>
+  <title>Engineering Project</title>
   <link rel="stylesheet" href="style.css">
   <link href="../../output.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body class="">
 
 <!--  Header start here-->
 
-    <header class=" overflow-hidden bg-[#3d3d3d] w-full">
-        <nav
-        class="flex w-full items-center justify-between container lg:justify-around  z-30 top-0  px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8"
-      >
-        <a href="/Dervac-Emirate/src/index.html" class="flex items-center ">
-          <img src="../../images/emirate-logo.svg" alt="logo" class=" lg:absolute top-0 z-10" />
+    <header class=" overflow-hidden md:bg-[#3d3d3d] w-full bg-gray-100" >
+        <nav class="flex w-full items-center justify-between container lg:justify-around  z-30 top-0  px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8">
+        <a href="/src/index.html" class="flex items-center">
+          <img src="../../images/emirate-logo.svg" alt="logo" class=" lg:absolute top-0 z-10 md:w-[150px] w-[90px]" />
         </a>
 
         <div class="flex items-center gap-4">
@@ -39,212 +25,203 @@
         </div>
         <!-- Desktop Navigation -->
         <ul
-          class="hidden lg:flex lg:text-lg lg:items-center lg:gap-10 font-sans font-medium lg:ml-8 xl:gap-8"
-    >
+          class="hidden lg:flex lg:text-lg lg:items-center lg:gap-10 font-sans font-medium lg:ml-8 xl:gap-8">
 
           <li class="relative group text-white p-2">
-            <a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
+            <a href="/src/pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
             <!-- Dropdown -->
             <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
-              <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
-              <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
-              <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
-              <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
-              <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
-              <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+              <li><a href="/src/pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+              <li><a href="/src/pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+              <li><a href="/src/pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+              <li><a href="/src/pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+              <li><a href="/src/pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+              <li><a href="/src/pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
             </ul>
           </li>
 
           <li class="relative group text-white p-2">
-            <a href="/Dervac-Emirate/src/pages/Engineering-support/support.html" class="">Engineering Support</a>
+            <a href="/src/pages/Engineering-support/support.html" class="">Engineering Support</a>
             <!-- Dropdown -->
             <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+                <li><a href="/src/pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                <li><a href="/src/pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                <li><a href="/src/pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                <li><a href="/src/pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                <li><a href="/src/pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                <li><a href="/src/pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                <li><a href="/src/pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
               </ul>
           </li>
           
           <li class="relative group text-white p-2">
-            <a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+            <a href="/src/pages/Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
             <!-- Dropdown -->
             <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
-                <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/lengineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
-                <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+                <li><a href="/src/pages/Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                <li><a href="/src/pages/Compliance-Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                <li><a href="/src/pages/Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                <li><a href="/src/pages/Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
               </ul>
           </li>
           <li class="text-white p-2">
-            <a href="/Dervac-Emirate/src/Engineering-Equipment.html">Engineering Equipiment</a>
+            <a href="/src/Engineering-Equipment.html">Engineering Equipiment</a>
           </li>
           <li class="text-white p-2">
-            <a href="./careers.html">Careers</a>
+            <a href="/src/careers.html">Careers</a>
           </li>
         </ul>
         <!-- End of Desktop Navigation -->
-        <div
-          id="sideNav"
-          class="fixed top-0 right-0 bg-gray-600 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
-        >
-          <div
-            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
-          >
-            <a href="javascript:void(0)" onclick="exitNav()"
-              ><img src="../../images/icon-close.svg" alt="Close logo"
-            /></a>
+        <div id="sideNav" class="fixed top-0 right-0 bg-gray-600 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden">
+          <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
+            <a href="javascript:void(0)" onclick="exitNav()"><img src="../../images/icon-close.svg" alt="Close logo"/></a>
           </div>
 
           <!-- Mobile Navigation -->
           <nav class="container">
             <ul class="text-center flex flex-col items-center text-2xl font-sans mt-36 sm:text-3xl ">
                 <li class="relative z-20 group text-white p-2">
-                    <a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
+                    <a href="../Aircraft-maintainance/aircraft.html" class="">Aircraft Maintenance</a>
                     <!-- Dropdown -->
                     <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-52">
-                        <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
-                        <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
-                        <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
-                        <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
-                        <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
-                        <li><a href="/Dervac-Emirate/src/pages/Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
+                      <li><a href="../Aircraft-maintainance/line.html" class="block text-sm px-4 py-4 ">Line Maintenance</a></li>
+                      <li><a href="../Aircraft-maintainance/base.html" class="block text-sm px-4 py-4 ">Base Maintenance</a></li>
+                      <li><a href="../Aircraft-maintainance/Overhaul.html" class="block text-sm px-4 py-4 ">Overhaul workshops</a></li>
+                      <li><a href="../Aircraft-maintainance/Maintenance.html" class="block text-sm px-4 py-4 ">Engine Maintenance center</a></li>
+                      <li><a href="../Aircraft-maintainance/Text.html" class="block text-sm px-4 py-4 ">Engine Text cell</a></li>
+                      <li><a href="../Aircraft-maintainance/Apperance.html" class="block text-sm px-4 py-4 ">Aircraft Apperance center</a></li>
                     </ul>
                   </li>
         
                   <li class="relative z-10 group text-white p-2">
-                    <a href="/Dervac-Emirate/src/pages/Engineering-support/support.html" class="">Engineering Support</a>
+                    <a href="../Engineering-support/support.html" class="">Engineering Support</a>
                     <!-- Dropdown -->
                     <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-72">
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
+                        <li><a href="../Engineering-support/materials.html" class="block text-sm px-4 py-4 ">Engineering Materials Management</a></li>
+                        <li><a href="../Engineering-support/aircraft.html" class="block text-sm px-4 py-4 ">Engineering Aircraft Procurement</a></li>
+                        <li><a href="../Engineering-support/project.html" class="block text-sm px-4 py-4 ">Engineering Projects</a></li>
+                        <li><a href="../Engineering-support/training.html" class="block text-sm px-4 py-4 ">Engineering Training</a></li>
+                        <li><a href="../Engineering-support/technical.html" class="block text-sm px-4 py-4 ">Engineering Technical Services</a></li>
+                        <li><a href="../Engineering-support/planning.html" class="block text-sm px-4 py-4 ">Engineering Planning & IT Systems</a></li>
+                        <li><a href="../Engineering-support/facilities.html" class="block text-sm px-4 py-4 ">Engineering Facilities</a></li>
                       </ul>
                   </li>
                   
                   <li class="relative group text-white p-2">
-                    <a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
+                    <a href="../Compliance-Monitoring/compliance-monitoring.html" class="">Compliance Monitoring</a>
                     <!-- Dropdown -->
                     <ul class="absolute left-0 hidden bg-white text-gray-800 shadow-md group-hover:block w-80">
-                      <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/lengineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
-                      <li><a href="/Dervac-Emirate/src/pages/Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
+                        <li><a href="../Compliance-Monitoring/department.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Department</a></li>
+                        <li><a href="/src/pages/Compliance-Monitoring/engineering.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Engineering</a></li>
+                        <li><a href="/src/pages/Compliance-Monitoring/regulatory-affairs.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Regulatory Affairs</a></li>
+                        <li><a href="/src/pages/Compliance-Monitoring/certification.html" class="block text-sm px-4 py-4 ">Compliance Monitoring Certification</a></li>
                       </ul>
                   </li>
                   <li class="text-white p-2">
-                    <a href="/Dervac-Emirate/src/Engineering-Equipment.html">Engineering Equipiment</a>
+                    <a href="/src/Engineering-Equipment.html">Engineering Equipiment</a>
                   </li>
                   <li class="text-white p-2">
-                    <a href="/Dervac-Emirate/src/careers.html">Careers</a>
+                    <a href="/src/careers.html">Careers</a>
                   </li>
             </ul>
           </nav>
         </div>
       </nav>
 
-      <div
-        onclick="exitNav()"
-        id="sideBar"
-        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
-      ></div>
+      <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"></div>
 
-        <div>
-          <div class="bg-[rgb(244,244,244)] h-full">
-            <h1 class="pt-36 pl-24 text-5xl font-semibold mb-8">Engineering Projects</h1>
-            <div class="flex gap-10 text-gray-500 text-lg pl-24">
-                <p>Engineering Projects section has expert knowledge and experience in the<br> evaluation, specification and negotiation of new and used aircraft acquisitions.<br> It monitors the process from inception, through inspection during aircraft <br>assembly, to delivery and acceptance.</p>
-                <p>It ensures that all the regulatory requirements, safety, functionality and<br> maintainability aspects are fully comprehended and complied for each<br> aircraft’s entry into service. It develops specifications for aircrafts and any new <br>system installations.</p>
-            </div>
-            <button class="bg-red-600  text-white text-lg font-semibold py-3 px-6 ml-24 shadow-lg mt-10">Contact us</button>
+      <section class="bg-gray-100 md:py-10 md:px-20 ">
+        <div class="md:flex md:gap-10 md:pt-20 md:pb-5 px-4">
+          <div class=" ">
+            <h1 class="font-medium md:text-5xl text-slate-700 text-3xl pt-10 pb-3" style="font-family:Amaranth;">Engineering Projects</h1>
+            <p class="text-gray-500 md:pb-8 md:max-w-[600px]">Engineering Projects section has expert knowledge and experience in the evaluation, specification and negotiation of new and used aircraft acquisitions. It monitors the process from inception, through inspection during aircraft assembly, to delivery and acceptance.</p>
           </div>
-          
+
+          <div class="md:pt-24 text-gray-500">
+            <p class="max-w-[600px]">It ensures that all the regulatory requirements, safety, functionality and  maintainability aspects are fully comprehended and complied for each aircraft’s entry into service. It develops specifications for aircrafts and any new system installations.</p>
+          </div>
         </div> 
+        <div class="md:pb-8 px-4 pb-14 pt-10">
+          <a class="md:py-5 md:px-10 py-4 px-8 md:text-[16px] bg-red-600 text-white font-bold hover:bg-white hover:text-red-600" href="/src/Engineering-Equipment.html">CONTACT US</a>
+        </div>
+        
+    </section>
+        
     </header>
 <!-- Header ends here -->
-<!-- <Ayub> -->
-      
-  <div class=" font-sans leading-normal tracking-normal">
-    <div class="min-h-screen flex  mt-10">
-      
-      <div class="w-1/4  p-6 ">
-        <ul class="space-y-2 font-bold text-gray-400 pl-24">
-          <li><a href="../Aircraft-maintainance/line.html">Engineering Materials Management</a></li>
-          <li><a href="../Aircraft-maintainance/base.html">Engineering Aircraft Procurement</a></li>
-          <li class="text-red-600 font-bold"><a href="../Aircraft-maintainance/Overhaul.html">Engineering Projects</a></li>
-          <li><a href="../Aircraft-maintainance/Maintenance.html">Engineering Training</a></li>
-          <li><a href="../Aircraft-maintainance/Text.html">Engineering Technical Services</a></li>
-          <li><a href="../Aircraft-maintainance/Text.html">Engineering Planning & IT Systems</a></li>
-          <li><a href="../Aircraft-maintainance/Apperance.html">Engineering Facilities</a></li>
-        </ul>
-      </div>
-  
-      
-      <div class="flex-1 p-8 gap-16  ">
-        <h1 class="text-4xl font-semibold mb-6">Passenger Entertainment and Connectivity <br>Services</h1>
-        <p class="mb-4  text-gray-500 text-lg`">
-          The IFE projects team consists of product specialists and IFE systems engineering professionals with in-<br>depth IFE knowledge, they define, develop and install some of the world's most advanced inflight<br> entertainment systems.
-        </p>
-        <p class="mb-4  text-gray-500 text-lg">
-          A typical product development process involves:
-        </p>
-  
-        <ul class="list-disc text-lg">
-          <li class="text-slate-500 pb-5 md:max-w-[700px]">Developing detailed IFE system and connectivity requirements by working closely with OEMs (such as Boeing and Airbus), Emirates Inflight services and product marketing departments, and then establishing a general product vision</li>
-          <li class="text-slate-500 pb-5 md:max-w-[700px]">Coordinating and monitoring development milestones in the design and testing process in conjunction with IFE suppliers, seat manufacturers, third party suppliers or integrators and OEMs</li>
-          <li class="text-slate-500 pb-5">Closely monitoring the guide and support of the BFE list  definition for the IFE product</li>
-          <li class="text-slate-500 pb-5">Providing follow up and support for IFE system installation and integration activities</li>
-          <li class="text-slate-500 pb-5 md:max-w-[700px]">Verifying that the IFE product development conforms to system requirements</li>
-          <li class="text-slate-500 pb-5 md:max-w-[700px]">Inspecting and supporting the acceptance process of the IFE/connectivity systems</li>
-          <li class="text-slate-500 pb-5 md:max-w-[700px]">Helping to establish recommended IFE/connectivity system spare parts list for spares procurement prior to entry into service</li>
-          <li class="text-slate-500 pb-5">Organising and supporting IFE and connectivity service readiness activities and in-house training</li>
-          <li class="text-slate-500 pb-5 md:max-w-[700px]">Coordinating and supporting retrofit processes by working closely with STC certification houses and airline base maintenance and installation teams</li>
-          <li class="text-slate-500 pb-12 md:max-w-[700px]">Ensuring that maintenance and troubleshooting manuals and relevant software are developed and delivered from suppliers well before the aircraft's entry into service</li>
-        </ul>
 
-        <h2 class="text-4xl font-medium text-gray-700 pb-5">New Technology</h2>
-        <p class="text-slate-500 pb-12 md:max-w-[700px]">This team keeps abreast of industry innovations and developments by constantly reviewing website articles, printed materials and magazines, and by participating in conferences. Based on these reviews, new technology, procedures and tools, and retrofit programmes, are introduced to reduce maintenance costs and to improve efficiency, passenger safety, comfort and inflight services</p>
+        <section class="md:px-20 md:pt-20 px-4">
+          <div class="md:flex md:gap-16 ">
+            <div class=" lg:hidden py-4 px-4 ">
+              <form action="">
+                <select class="flex justify-between w-[450px] py-4 border text-left" name="" id="">
+                  <option value="">Engineering Materials Management</option>
+                  <option value="">Engineering Aircraft Procurement</option>
+                  <option value="">Engineering Project</option>
+                  <option value="">Engineering Training</option>
+                  <option value="">Engineering Technical Services</option>
+                  <option value="">Engineering Planning & IT Systems</option>
+                  <option value="">Engineering Facilities</option>
+                </select>
+              </form>
+            </div>
 
-        <h2 class="text-4xl font-medium text-gray-700 pb-5">Cabin Interiors</h2>
-        <p class="text-slate-500 pb-5">A dedicated cabin interiors team is responsible for a broad range of activities, including:</p>
+            <div class="text-slate-500 font-medium md:pt-5 hidden lg:inline-block">
+              <p class="pb-2 active:text-red-600"><a href="/src/pages/Engineering-support/training.html">Engineering Materials Management</a><p>
+              <p class="pb-2 active:text-red-600"><a href="/src/pages/Engineering-support/aircraft.html">Engineering Aircraft Procurement</a><p>
+              <p class="pb-2 active:text-red-600"><a href="/src/pages/Engineering-support/project.html">Engineering Project</a></p>
+              <p class="pb-2 active:text-red-600"><a href="/src/pages/Engineering-support/materials.html">Engineering Training</a></p>
+              <p class="pb-2 active:text-red-600"><a href="/src/pages/Engineering-support/technical.html">Engineering Technical Services</a></p>
+              <p class="pb-2 active:text-red-600"><a href="/src/pages/Engineering-support/planning.html">Engineering Planning & IT Systems</a></p>
+              <p class="active:text-red-600"><a href="/src/pages/Engineering-support/facilities.html">Engineering Facilities</a></p>
+            </div>
 
-        <ul class="list-disc text-lg">
-          <li class="text-slate-500 pb-5">Enhancing passenger comfort and introducing new features and amenities</li>
-          <li class="text-slate-500 pb-5">Preparing specifications for new BFE products</li>
-          <li class="text-slate-500 pb-5">Evaluating and selecting BFE suppliers</li>
-          <li class="text-slate-500 pb-5">The technical coordination and programme management of BFE items</li>
-          <li class="text-slate-500 pb-12">Supporting other departments to facilitate the smooth introduction of new aircrafts to the fleet</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-<!-- <Ayub> -->
+            <div class="px-3  md:pl-12">
+              <h2 class="text-4xl font-medium text-gray-700 pb-4" style="font-family:Amaranth;">Passenger Entertainment and Connectivity Services</h2>
+              <p class="text-slate-500 md:max-w-[710px] pb-5">The IFE projects team consists of product specialists and IFE systems engineering professionals with in-depth IFE knowledge, they define, develop and install some of the world's most advanced inflight entertainment systems.</p>
+              <p class="text-slate-500 pb-5">A typical product development process involves:</p>
 
-        
+              <ul class="list-[square] pl-5 ">
+                <li class="text-slate-500 pb-5 md:max-w-[700px]">Developing detailed IFE system and connectivity requirements by working closely with OEMs (such as Boeing and Airbus), Emirates Inflight services and product marketing departments, and then establishing a general product vision</li>
+                <li class="text-slate-500 pb-5 md:max-w-[700px]">Coordinating and monitoring development milestones in the design and testing process in conjunction with IFE suppliers, seat manufacturers, third party suppliers or integrators and OEMs</li>
+                <li class="text-slate-500 pb-5">Closely monitoring the guide and support of the BFE list definition for the IFE product</li>
+                <li class="text-slate-500 pb-5">Providing follow up and support for IFE system installation and integration activities</li>
+                <li class="text-slate-500 pb-5 md:max-w-[700px]">Verifying that the IFE product development conforms to system requirements</li>
+                <li class="text-slate-500 pb-5 md:max-w-[700px]">Inspecting and supporting the acceptance process of the IFE/connectivity systems</li>
+                <li class="text-slate-500 pb-5 md:max-w-[700px]">Helping to establish recommended IFE/connectivity system spare parts list for spares procurement prior to entry into service</li>
+                <li class="text-slate-500 pb-5">Organising and supporting IFE and connectivity service readiness activities and in-house training</li>
+                <li class="text-slate-500 pb-5 md:max-w-[700px]">Coordinating and supporting retrofit processes by working closely with STC certification houses and airline base maintenance and installation teams</li>
+                <li class="text-slate-500 pb-12 md:max-w-[700px]">Ensuring that maintenance and troubleshooting manuals and relevant software are developed and delivered from suppliers well before the aircraft's entry into service</li>
+              </ul>
 
+              <h2 class="text-4xl font-medium text-gray-700 pb-5" style="font-family:Amaranth;">New Technology</h2>
+              <p class="text-slate-500 pb-12 md:max-w-[700px]">This team keeps abreast of industry innovations and developments by constantly reviewing website articles, printed materials and magazines, and by participating in conferences. Based on these reviews, new technology, procedures and tools, and retrofit programmes, are introduced to reduce maintenance costs and to improve efficiency, passenger safety, comfort and inflight services</p>
+
+              <h2 class="text-4xl font-medium text-gray-700 pb-5" style="font-family:Amaranth;">Cabin Interiors</h2>
+              <p class="text-slate-500 pb-5">A dedicated cabin interiors team is responsible for a broad range of activities, including:</p>
+   
+              <ul class="list-square pl-5 ">
+                <li class="text-slate-500 pb-5">Enhancing passenger comfort and introducing new features and amenities</li>
+                <li class="text-slate-500 pb-5">Preparing specifications for new BFE products</li>
+                <li class="text-slate-500 pb-5">Evaluating and selecting BFE suppliers</li>
+                <li class="text-slate-500 pb-5">The technical coordination and programme management of BFE items</li>
+                <li class="text-slate-500 pb-12">Supporting other departments to facilitate the smooth introduction of new aircrafts to the fleet</li>
+              </ul>
 
 
-
-
-
-
+            </div>
+          </div>
+        </section>
 
         <footer class="">
           <img src="../../images/emirate-logo.svg" alt="" class="mx-auto relative -mb-10">
           <div class="flex flex-col items-center text-white pt-10 bg-slate-500">
-            <div class="lg:flex flex text-sm lg:text-lg justify-evenly gap-3 font-semibold">
-              <a href="./pages/Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
-              <a href="./pages/Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
-              <a href="./pages/Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
-              <a href="./Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
-              <a href="./careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
+            <div class="md:flex flex px-3 text-sm lg:text-lg justify-evenly gap-3 font-semibold">
+              <a href="../../pages/Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
+              <a href="../../pages/Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
+              <a href="../../pages/Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
+              <a href="../../Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
+              <a href="../../careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
             </div>
             <div>
               <p> &copy; 2024 dervac Hub developer. All Rights Reserved.</p>
@@ -258,7 +235,6 @@
             
         </div>
         </footer>
-
 
 <script>
     function openNav() {
