@@ -1142,11 +1142,6 @@ video {
   padding: 2rem;
 }
 
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1969,14 +1964,14 @@ video {
     padding-right: 3rem;
   }
 
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .lg\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pl-28 {

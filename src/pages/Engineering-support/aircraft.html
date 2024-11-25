@@ -9,8 +9,15 @@
   <link href="../../output.css" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, 
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+</style>
 </head>
-<body class="">
+<body>
 
 <!--  Header start here-->
 
@@ -201,6 +208,96 @@
               <a href="../Engineering-support/facilities.html">Engineering Facilities</a>
             </div>
             <div>
+              <!-- engine maintenance centre -->
+              <div class="relative inline-block text-left md:hidden">
+                <!-- Button -->
+                <button
+                  class="flex justify-between my-5 mt-5 w-full border-[1px] border-gray-300 px-5 space-x-20 py-4 bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black"
+                  id="menu-button"
+                  onclick="toggleDropdown()"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                <div>
+                  Engine Maintenance Centre
+                </div>
+                
+                  <svg
+                    class="-mr-1 ml-2 h-5 w-5 text-red-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              
+                <!-- Dropdown Menu -->
+                <div
+                  id="dropdown-menu"
+                  class="hidden right-0 mt-2 w-[100] bg-white border border-black ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="menu-button"
+                >
+                  <div class="py-1" role="none">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Line Maintenance
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Base Maintenance
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Overhaul Workshops
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Engine Maintenance Centre
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Engine Test Cell
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Aircraft Appearance Centre
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
             <div class="space-y-5">
               <h1 class="font-semibold text-4xl">
                 Contracts Management
@@ -217,13 +314,13 @@
             </div>
             <!-- propulsin plainning and logistics  -->
             <div class="space-y-3">
-              <h1 class="font-semibold text-4xl">
+              <h1 class="font-semibold text-4xl pt-10">
                 Product Support Agreement
               </h1>
               <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
                 The Product Support Agreement section works in coordination with Emirates Engineering's user groups and Procurement Managers. They negotiate terms and conditions for product support to ensure full remedies coverage and to reduce maintenance costs to the minimum level possible. 
               </p>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
+              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px] pt-5">
                 Digital copies and summaries of all Product Support Agreements (PSAs) are available via electronic access for easy reference. This section works with Emirates Engineering's user groups to enhance the PSA's and update them where applicable. All updates are immediately reflected in the relevant digital repository.
               </p>
             </div>
@@ -270,6 +367,20 @@
     document.getElementById("sideBar").style.width = "0";
     document.getElementById("sideNav").style.width = "0";
   }
+  function toggleDropdown() {
+      const menu = document.getElementById("dropdown-menu");
+      menu.classList.toggle("hidden");
+    }
+  
+    // Close dropdown if clicked outside
+    document.addEventListener("click", function (event) {
+      const button = document.getElementById("menu-button");
+      const menu = document.getElementById("dropdown-menu");
+  
+      if (!button.contains(event.target) && !menu.contains(event.target)) {
+        menu.classList.add("hidden");
+      }
+    });
   </script>
 
 </body>
