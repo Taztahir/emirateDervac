@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../../images/favicon-emirate-.png" type="image/x-icon">
   <title>Emirate Engineering</title>
@@ -12,7 +13,7 @@
 
 <!--  Header start here-->
 
-    <header class=" overflow-hidden bg-[#3d3d3d] w-full">
+    <header class=" overflow-hidden md:bg-[#3d3d3d] w-full bg-[#f4f4f4]">
         <nav
         class="flex w-full items-center justify-between container lg:justify-around  z-30 top-0  px-4 md:px-8 lg:px-12 xl:px-5 lg:py-8"
       >
@@ -143,38 +144,65 @@
         id="sideBar"
         class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
       ></div>
-      <div>
-        <div class="bg-[rgb(244,244,244)] h-full">
-          <h1 class="pt-36 pl-24 text-5xl font-semibold mb-8">Engineering Materials Management</h1>
-          <div class="flex gap-20 text-gray-500 text-lg pl-24">
-              <p>This department is responsible for developing policies, processes and <br>procedures to support operations with optimised inventory investment and <br>operating costs.</p>
-              <p>This includes forecasting, planning, stock reviews, replenishment and<br> Outstations & AOG Material support.</p>
+      <div class="py-10 px-6 lg:px-52 bg-[#f4f4f4] h-full md:px-20">
+        <div class="">
+          
+          <h1 class="pt-16 text-3xl sm:text-5xl font-semibold mb-6 sm:mb-8 mt-10">Engineering Materials Management</h1>
+          
+          
+          <div class="text-gray-400 sm:text-lg space-y-6 sm:space-y-0 sm:flex sm:gap-20 text-xl ">
+            <p >
+              This department is responsible for developing policies, processes, and <br> 
+              procedures to support operations with optimised inventory investment and <br>
+              operating costs.
+            </p>
+            <p>
+              This includes forecasting, planning, stock reviews, replenishment and <br>
+              Outstations & AOG Material support.
+            </p>
           </div>
-          <button class="bg-red-600  text-white text-lg font-semibold py-3 px-6 ml-24 shadow-lg mt-10">Contact us</button>
+          
+          <!-- Button -->
+          <button class="bg-red-600 text-white  hover:bg-white hover:text-red-600 text-base sm:text-lg font-semibold py-3 px-6 shadow-lg mt-8 sm:mt-10 mb-10">
+            <a href="">Contact us</a>
+          </button>
         </div>
-        
-      </div> 
+      </div>
+      
         
     </header>
 <!-- Header ends here -->
 <!-- <Ayub> -->
-  <div class=" font-sans leading-normal tracking-normal">
-    <div class="min-h-screen flex gap-48 mt-10">
+  <div class="block sm:hidden">
+    <select class="w-full px-10 p-5 border  border-gray-300 rounded-md text-[#707070] font-bold">
+      <option value=""><a href="../Aircraft-maintainance/line.html">Engineering Materials Management</a></option>
+      <option value=""><a href="../Aircraft-maintainance/base.html">Engineering Aircraft Procurement</option>
+      <option value=""><a href="../Aircraft-maintainance/Overhaul.html">Engineering Projects</a></option>
+      <option value=""><a href="../Aircraft-maintainance/Maintenance.html">Engineering Training</option>
+      <option value=""><a href="../Aircraft-maintainance/Text.html">Engineering Technical Services</option>
+      <option value=""><a href="../Aircraft-maintainance/Text.html">Engineering Planning & IT Systems</option>
+      <option value=""><a href="../Aircraft-maintainance/Apperance.html">Engineering Facilities</option>
+    </select>
+  </div>
+  <div class="">
+    <div class="flex lg:gap-48 mt-10 xl:px-52 px-6 md:px-20">
       
-      <div class="w-1/4  p-6 ">
-        <ul class="space-y-2 font-bold text-gray-400 pl-24">
+      <div class="">
+        <ul class="space-y-2 font-bold text-gray-400 hidden md:grid">
           <li class="text-red-600 font-bold"><a href="../Aircraft-maintainance/line.html">Engineering Materials Management</a></li>
           <li><a href="../Aircraft-maintainance/base.html">Engineering Aircraft Procurement</a></li>
-          <li ><a href="../Aircraft-maintainance/Overhaul.html">Engineering Projects</a></li>
+          <li><a href="../Aircraft-maintainance/Overhaul.html">Engineering Projects</a></li>
           <li><a href="../Aircraft-maintainance/Maintenance.html">Engineering Training</a></li>
           <li><a href="../Aircraft-maintainance/Text.html">Engineering Technical Services</a></li>
           <li><a href="../Aircraft-maintainance/Text.html">Engineering Planning & IT Systems</a></li>
           <li><a href="../Aircraft-maintainance/Apperance.html">Engineering Facilities</a></li>
         </ul>
       </div>
-  
       
-      <div class="pt-6 space-y-8 text-lg text-gray-400 pl-24">
+
+     
+      
+      <div class="pt-6 space-y-8 text-lg text-gray-400">
         <p class="">
           The Material Management department, is a team of the professionals with extensive knowledge and <br>experience of complex issues within the field. The team is organised along commodity lines; Cabin, IFE, <br>Airframe, Engines, Inventory Control and Operations Support, as well as a dedicated team managing <br>Rotable Components and Outstation support.
         </p>
@@ -201,11 +229,11 @@
           <img src="../../images/emirate-logo.svg" alt="" class="mx-auto relative -mb-10">
           <div class="flex flex-col items-center text-white pt-10 bg-slate-500">
             <div class="lg:flex flex text-sm lg:text-lg justify-evenly gap-3 font-semibold">
-              <a href="./pages/Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
-              <a href="./pages/Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
-              <a href="./pages/Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
-              <a href="./Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
-              <a href="./careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
+              <a href="../Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
+              <a href="../Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
+              <a href="../Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
+              <a href="/emirateDervac/src/Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
+              <a href="/emirateDervac/src/careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
             </div>
             <div>
               <p> &copy; 2024 dervac Hub developer. All Rights Reserved.</p>
