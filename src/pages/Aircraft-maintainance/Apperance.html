@@ -7,18 +7,6 @@
   <title>Emirate Engineering</title>
   <link rel="stylesheet" href="style.css">
   <link href="../../output.css" rel="stylesheet">
-  <!-- <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-}
-</script> -->
 </head>
 <body class="">
 
@@ -156,13 +144,15 @@
         class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
       ></div>
 
-      <div>
-        <div class="bg-[rgb(244,244,244)] h-full">
-          <h1 class="pt-36 pl-24 text-5xl mb-8 font-semibold">Aircraft Appearance Centre</h1>
-          <p class="pl-24 text-gray-500 text-lg">We keep our aircraft looking great inside and out. The Aircraft Appearance<br> Centre is divided into a paint hangar, paint workshop, and a graphics and decal <br>shop. The paint shops are part of the Base Maintenance team.
+      <div class="py-10 px-6 lg:px-52 bg-[#f4f4f4] h-full md:px-20">
+        <div class="">
+          <h1 class="pt-16 text-3xl sm:text-5xl font-semibold mb-6 sm:mb-8 mt-10">Aircraft Appearance Centre</h1>
+          <p class="text-gray-400 sm:text-lg space-y-6 sm:space-y-0  sm:gap-20 text-xl">We keep our aircraft looking great inside and out. The Aircraft Appearance<br> Centre is divided into a paint hangar, paint workshop, and a graphics and decal <br>shop. The paint shops are part of the Base Maintenance team.
     
           </p>
-          <button class="bg-red-600  text-white text-lg font-semibold py-3 px-6 ml-24 shadow-lg mt-10">Contact us</button>
+          <button class="bg-red-600 text-white  hover:bg-white hover:text-red-600  text-base sm:text-lg font-semibold py-3 px-6 shadow-lg mt-8 sm:mt-10 mb-10">
+            <a href="">Contact us</a>
+          </button>
         </div>
         
       </div>
@@ -170,62 +160,53 @@
     </header>
 <!-- Header ends here -->
 <!-- <Ayub> -->
-
+  <div class="block sm:hidden">
+    <select class="w-full px-10 p-5 border  border-gray-300 rounded-md text-[#707070] font-bold">
+      <option value=""><a href="../Aircraft-maintainance/line.html">Line Maintenance</a></option>
+      <option value=""><a href="../Aircraft-maintainance/base.html">Base Maintenance</a></option>
+      <option value=""><a href="../Aircraft-maintainance/Overhaul.html">Overhaul workshops</a></option>
+      <option value=""><a href="../Aircraft-maintainance/Maintenance.html">Engine Maintenance center</a></option>
+      <option value=""><a href="../Aircraft-maintainance/Text.html">Engine Text cell</a></option>
+      <option value=""><a href="../Aircraft-maintainance/Text.html">Aircraft Apperance center</a></option>
+    </select>
+  </div>
   
-  <div class=" font-sans leading-normal tracking-normal">
-      <div class="min-h-screen flex  mt-10">
-        
-        <div class="w-1/4  p-6 ">
-          <ul class="space-y-2 font-bold text-gray-400 pl-24">
-            <li><a href="../Aircraft-maintainance/line.html">Line Maintenance</a></li>
-            <li><a href="../Aircraft-maintainance/base.html">Base Maintenance</a></li>
-            <li><a href="../Aircraft-maintainance/Overhaul.html">Overhaul Workshops</a></li>
-            <li><a href="../Aircraft-maintainance/Maintenance.html">Engine Maintenance Centre</a></li>
-            <li><a href="../Aircraft-maintainance/Text.html">Engine Test Cell</a></li>
-            <li class="text-red-600 font-bold"><a href="../Aircraft-maintainance/Apperance.html">Aircraft Appearance Centre</a></li>
-          </ul>
-        </div>
-    
-        
-        <div class="flex-1 p-8   ">
-          <h1 class="text-4xl font-semibold mb-6">Paint Workshops</h1>
-          <p class="mb-4  text-gray-500 text-lg`">
-            These teams make the aircraft shine on the tarmac. Livery, paintwork, cleanliness, and maintenance of the <br>aircraft interior are all taken care of at the Aircraft Appearance Centre (our aircraft paint facility).
-          </p>
-          <p class="mb-4  text-gray-500 text-lg">
-            The centre is divided into three areas: a paint hangar, a paint workshop, and a graphic and decal shop.
-          </p>
-    
-          
-          <div class="mb-6 ">
-            <li class="text-xl  text-gray-500 mb-2">Paint Hangar</li>
-            <p class=" text-gray-500 text-lg pl-7">
-              Our paint hangar has its own controlled environment. It’s a fully automated climate control facility, capable of accommodating any aircraft up to the Airbus A380. We use the latest technology to control the relative humidity and temperature during all aspects of the repaint phase, from paint removal through to paint application and various decorative liveries. At the same time, we exceed the standards set by the OEM.
-            </p>
-              
-          
-          </div>
-    
-          
-          <div class="  text-gray-500 text-lg">
-            <li class="text-xl font-semibold mb-2 ">Paint Shop</li>
-            <p class="pl-7">
-              These experts provide top-to-bottom paintwork on the fleet, including precision interior finishing. The paint shop is equipped with a preparation area, three temperature-controlled spray booths, as well as a wood grain design section. This is where we carry out a complete paint refurbishment of the interior seats as well as restoring multiple wood grain designs across the Emirates fleet.
-            </p>
-            <p class="pl-7">
-              The skilled technicians at the paint shop carry out all paintwork repairs from base maintenance to line maintenance. The workshops provide surface refinishing, including full paint restoration on wheel hubs, paint refurbishment on all engine components, paint renewal on interior furnishings including the paint repairs on the aircraft exterior and its components.
-            </p>
-          </div>
-          <div class="mt-6  text-gray-500">
-            <li class="text-xl font-semibold mb-2  text-gray-500">Graphics and Decal Shop</li>
-            <p class="text-gray-500 text-lg pl-7">
-              This is where we fabricate all interior placards, all exterior mandatory markings, stencils and livery markings, and all promotional aircraft decals for special occasions or celebrations. It’s likely you’ve seen these on the Emirates fleet, such as the sponsored football teams and our famous United for Wildlife decals.
-            </p>
-          </div>
+  <div class="">
+    <div class="flex lg:gap-48 mt-10 xl:px-52  md:px-20 gap-10">
+      
+      <div class="">
+        <ul class="space-y-2 font-bold text-gray-400 hidden md:grid">
+          <li><a href="../Aircraft-maintainance/line.html">Line Maintenance</a></li>
+          <li><a href="../Aircraft-maintainance/base.html">Base Maintenance</a></li>
+          <li><a href="../Aircraft-maintainance/Overhaul.html">Overhaul workshops</a></li>
+          <li><a href="../Aircraft-maintainance/Maintenance.html">Engine Maintenance center</a></li>
+          <li><a href="../Aircraft-maintainance/Text.html">Engine Text cell</a></li>
+          <li class="text-red-600 font-bold"><a href="../Aircraft-maintainance/Text.html">Aircraft Apperance center</a></li>
+        </ul>
+      </div>
+      
+
+     
+      
+      <div class="pt-6 space-y-8 text-lg text-gray-400">
+        <h2 class="text-5xl text-gray-800 font-semibold">Paint Workshops</h2>
+        <p class="">
+          These teams make the aircraft shine on the tarmac. Livery, paintwork, cleanliness and maintenance of the 
+          aircraft interior are all taken care of at the Aircraft Appearance Centre (our aircraft paint facility).
+        </p>
+        <p>
+          The centre is divided into three areas: a paint hangar, a paint workshop, and a graphic and decal shop.
+        </p>
+        <li>Paint Hangar</li>
+        <p>Our paint hangar has its own controlled environment. It’s a fully automated climate control facility, capable of accommodating any aircraft up to the Airbus A380. We use the latest technology to control the relative humidity and temperature during all aspects of the repaint phase, from paint removal through to paint application and various decorative liveries. At the same time, we exceed the standards set by the OEM.</p>
+        <li>Paint Shop</li>
+        <p>These experts provide top to bottom paintwork on the fleet, including precision interior finishing. The paint shop is equipped with a preparation area, three temperature controlled spray booths, as well as a wood grain design section. This is where we carry out a complete paint refurbishment of the interior seats as well as restoring multiple wood grain designs across the Emirates fleet. The skilled technicians at the paint shop carry out all paintwork repairs from base maintenance to line maintenance. The workshops provide surface refinishing, including full paint restoration on wheel hubs, paint refurbishment on all engine components, paint renewal on interior furnishings including the paint repairs on the aircraft exterior and its components.</p>
+        <li>Graphics and Decal Shop</li>
+        <p>This is where we fabricate all interior placards, all exterior mandatory markings, stencils and livery markings, and all promotional aircraft decals for special occasions or celebrations. It’s likely you’ve seen these on the Emirates fleet, such as the sponsored football teams and our famous United for Wildlife decals.</p>
         </div>
       </div>
+    </div>
   </div>
-
 
 
 
@@ -236,11 +217,11 @@
           <img src="../../images/emirate-logo.svg" alt="" class="mx-auto relative -mb-10">
           <div class="flex flex-col items-center text-white pt-10 bg-slate-500">
             <div class="lg:flex flex text-sm lg:text-lg justify-evenly gap-3 font-semibold">
-              <a href="./pages/Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
-              <a href="./pages/Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
-              <a href="./pages/Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
-              <a href="./Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
-              <a href="./careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
+              <a href="../Aircraft-maintainance/aircraft.html" class="lg:mx-3 my-5 mt-10">Aircraft Maintenance</a>
+              <a href="../Engineering-support/support.html" class="lg:mx-3 my-5 mt-10">Engineering Support</a>
+              <a href="../Compliance-Monitoring/compliance-monitoring.html" class="lg:mx-3 my-5 mt-10">Compliance Monitoring</a>
+              <a href="/emirateDervac/src/Engineering-Equipment.html" class="lg:mx-3 my-5 mt-10">Engineering Enquiries</a>
+              <a href="/emirateDervac/src/careers.html" class="lg:mx-3 my-5 mt-10">Careers</a>
             </div>
             <div>
               <p> &copy; 2024 dervac Hub developer. All Rights Reserved.</p>
