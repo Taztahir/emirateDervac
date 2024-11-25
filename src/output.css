@@ -1818,6 +1818,18 @@ video {
     width: 600px;
   }
 
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:w-\[0\%\] {
+    width: 0%;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .md\:max-w-\[600px\] {
     max-width: 600px;
   }
@@ -1977,6 +1989,34 @@ video {
 
   .md\:pr-16 {
     padding-right: 4rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .md\:pl-36 {
+    padding-left: 9rem;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .md\:pl-48 {
+    padding-left: 12rem;
+  }
+
+  .md\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .md\:pl-56 {
+    padding-left: 14rem;
   }
 
   .md\:text-end {
