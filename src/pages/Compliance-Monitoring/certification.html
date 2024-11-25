@@ -156,7 +156,7 @@
 <!-- Header ends here -->
 
             <section class="md:pt-20 px-4">
-            <div class="md:flex md:gap-24 ">
+            <div class="md:flex md:gap-16">
               <div class=" lg:hidden py-4 px-4">
                 <form action="">
                   <select class="flex justify-between w-[450px] py-4 border text-left active:text-red-700" name="" id="">
@@ -168,14 +168,14 @@
                 </form>
               </div>
             
-              <div class="text-slate-500 font-medium hidden lg:block md:pt-5">
+              <div class="text-slate-500 font-bold text-[18px] hidden lg:block md:pt-5">
                 <p class="pb-3 active:text-red-600"><a href="/src/pages/Compliance-Monitoring/department.html">Compliance Monitoring Department</a></p>
                 <p class="pb-3 active:text-red-600"><a href="/src/pages/Compliance-Monitoring/engineering.html">Compliance Monitoring Engineering</a></p>
-                <p class="pb-3 active:text-red-600"><a class="" href="/src/pages/Compliance-Monitoring/regulatory-affairs.html">Compliance Monitoring Regulatory Affairs</a></p>
-                <p class="pb-3 active:text-red-600" onclick="red"><a href="/src/pages/Compliance-Monitoring/certification.html">Compliance Monitoring Certification</a></p>
+                <p class="pb-3"><a class="" href="/src/pages/Compliance-Monitoring/regulatory-affairs.html">Compliance Monitoring Regulatory Affairs</a></p>
+                <p class="pb-3 text-red-700" ><a href="/src/pages/Compliance-Monitoring/certification.html">Compliance Monitoring Certification</a></p>
               </div>
             
-              <div class="">
+              <div class="md:pr-16">
                 <h2 class="text-4xl font-medium text-gray-700 pb-4 " style="font-family:Amaranth;">Compliance Monitoring – Certification</h2>
                 
                 <p class="text-slate-500 md:max-w-[770px] pb-5">The Compliance Monitoring Engineering - Certification (CME-C) section is responsible for the establishment of Emirates Engineering standards for qualifying and evaluating certifying staff and issuance of privileges and limitations based on operator’s national aviation regulations and the level of trainings and extent of experience of individual certifying staff.</p>
@@ -198,8 +198,36 @@
                 <p class="text-slate-500 pb-12 md:max-w-[700px]">CME-Certification section responsibilities also encompass the establishment of qualification criteria for the approval and issuance of authorisations to Emirates Engineering Training Centre qualified personnel to conduct the GCAA/EASA-approved aircraft type courses, engine and/or component specific training, theoretical examinations, on-the-job practical assessments and other aviation-related training activities.
 
                   The CME-Certification section centrally processed, managed and control application, evaluation, issuance, renewal, withdrawal and retention of consequent records of certifying staff authorisation through its secured electronic authorisation database called “Tarkhis”. All Authorisation approval are issued electronically while the list of all approval holders are regularly published in the Emirates Engineering portal.</p>
-              
+            
+                  <section class="pb-10 md:w-[60%]">
+                    <div class="justify-end it flex flex-col  bg-gray-100">
+                      <!-- Chat Header -->
+                      <div class="p-4 bg-gray-200 text-gray-400 font-bold text-center">
+                        Chat Engine
+                      </div>
+                    
+                      <!-- Chat Messages Area -->
+                      <div class="flex-1 overflow-y-auto p-4 space-y-4" id="messageArea">
+                        <!-- Example Messages -->
+                        <div class="flex items-start">
+                          <div class="bg-gray-200 text-gray-800 p-3 rounded-lg max-w-xs">
+                            Hello! How can I help you today?
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Chat Input -->
+                      <div class="p-4 bg-white border-t">
+                        <form id="chatForm" class="flex items-center space-x-2">
+                          <input type="text" id="messageInput" class="flex-1 border rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue-300" placeholder="Type your message..."required/>
+                          <button type="submit" class="bg-gray-300 text-gray-400 font-bold p-2 rounded-lg hover:bg-blue-600">Send</button>
+                        </form>
+                      </div>
+                    </div>
+                  </section>
               </div>
+
+              
             </div>
             </section>
 
@@ -238,6 +266,52 @@
     document.getElementById("sideNav").style.width = "0";
   }
   </script>
+
+<script>
+  document.getElementById('chatForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const messageInput = document.getElementById('messageInput');
+    const message = messageInput.value.trim();
+    
+    if (message) {
+      // Display the user's message in the chat area
+      const messageArea = document.getElementById('messageArea');
+      const userMessage = document.createElement('div');
+      userMessage.className = "flex items-end justify-end";
+      userMessage.innerHTML = `
+        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs">
+          ${message}
+        </div>`;
+      messageArea.appendChild(userMessage);
+
+      // Scroll to the latest message
+      messageArea.scrollTop = messageArea.scrollHeight;
+
+      // Send the message to the backend
+      try {
+        const response = await fetch('/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ message }),
+        });
+
+        if (response.ok) {
+          console.log('Message sent to email!');
+        } else {
+          console.error('Failed to send message.');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+
+      // Clear the input field
+      messageInput.value = '';
+    }
+  });
+</script>
 
 </body>
 </html>
