@@ -9,8 +9,15 @@
   <link href="../../output.css" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, 
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+</style>
 </head>
-<body class="">
+<body>
 
 <!--  Header start here-->
 
@@ -188,7 +195,7 @@
 <!-- Header ends here -->
 
 
-        <section class=" py-20 px-28 xl:px-44">
+        <section class=" py-20 px-5 lg:px-28 xl:px-44">
           <div class="flex justify-between">
             <!-- links sections -->
             <div class="md:flex flex-col text-lg font-semibold text-gray-500 space-y-2 hidden">
@@ -201,86 +208,124 @@
               <a href="../Engineering-support/facilities.html">Engineering Facilities</a>
             </div>
             <div>
+              <!-- engine maintenance centre -->
+              <div class="relative inline-block text-left md:hidden">
+                <!-- Button -->
+                <button
+                  class="flex justify-between my-5 mt-5 w-full border-[1px] border-gray-300 px-9 space-x-20 py-4 bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-black"
+                  id="menu-button"
+                  onclick="toggleDropdown()"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                <div>
+                  Engine Maintenance Centre
+                </div>
+                
+                  <svg
+                    class="-mr-1 ml-2 h-5 w-5 text-red-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              
+                <!-- Dropdown Menu -->
+                <div
+                  id="dropdown-menu"
+                  class="hidden right-0 mt-2 w-[100] bg-white border border-black ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="menu-button"
+                >
+                  <div class="py-1" role="none">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Line Maintenance
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Base Maintenance
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Overhaul Workshops
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-white bg-blue-500 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Engine Maintenance Centre
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Engine Test Cell
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      role="menuitem"
+                      tabindex="-1"
+                    >
+                      Aircraft Appearance Centre
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
             <div class="space-y-5">
               <h1 class="font-semibold text-4xl">
-              Engine Maintenance Centre
+                Contracts Management
             </h1>
             <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-              Emirates Airlines have embarked on the installation of a state-of-the-art maintenance facility, the Emirates Engine Maintenance Centre, with the aim of providing Emirates fleet the best in aircraft engine maintenance and repair. 
+              Following the completion of any supply agreement or contract by the Procurement section, the Contracts Management section ensures that all useful terms, conditions, incentives and product support clauses are distributed to the relevant engineering stakeholders for their follow-up so that appropriate action can be taken. 
             </p>
             <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-              This facility, also called EEMC for short, will be located at Al Warsan in Dubai and will have the capacity to maintain, overhaul and repair GE 90, GP 7200. It aims at being the leading aircraft engine maintenance centre in the MENA region.
+              Our Contracts Management team ensures that systems and processes are in place within Emirates Engineering for the timely collection of all contractual benefits. 
             </p>
             <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-              With an investment of US$ 120 million and constructed on a 210,000 square feet of land, it is fully operational since July 2014 with a capacity to complete Full Shop Visits of 250 to 300 engines.
-            </p>
-            <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-              It will accommodate a total of average in-processes of 30 engines with an annual capacity of 250 - 300 turbo-fan engines. It will also have an integrated state-of-the-art line-hoisting system with the capacity to handle module change and module overhaul work. 
-            </p>
-            <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-              The EEMC is designed to provide a 24/7 service 365 days a year and will be backed by a qualified and highly competent workforce. The engineering staff will have the capacity to strip, inspect and build in the same area. The capacity of the skilled staff will be further enhanced by an information and communication technology system that supports quality control in the provision of maintenance, repair and overhaul (MRO) services. 
+              This section also assists Emirates' senior management by ensuring the ready availability of digital copies of contracts, which are stored in a safe, controlled repository for easy reference when required.
             </p>
             </div>
             <!-- propulsin plainning and logistics  -->
             <div class="space-y-3">
-              <h1 class="font-semibold text-4xl">
-                Propulsion Planning and Logistics (PP&L)
+              <h1 class="font-semibold text-4xl pt-10">
+                Product Support Agreement
               </h1>
               <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                This team manages the Engine Maintenance Centre, making sure we are stocked with spares and that we’re working efficiently and cost-effectively across all areas. This includes engines, auxiliary power units, nacelle components and power plant parts, in line with the expansion plan for the Emirates fleet.
+                The Product Support Agreement section works in coordination with Emirates Engineering's user groups and Procurement Managers. They negotiate terms and conditions for product support to ensure full remedies coverage and to reduce maintenance costs to the minimum level possible. 
               </p>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                To achieve this, the PP&L team evaluates and performs feasibility studies, looking at ways we can develop and expand our in-house engine shop.
+              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px] pt-5">
+                Digital copies and summaries of all Product Support Agreements (PSAs) are available via electronic access for easy reference. This section works with Emirates Engineering's user groups to enhance the PSA's and update them where applicable. All updates are immediately reflected in the relevant digital repository.
               </p>
             </div>
             <!-- engine technical services -->
-            <div class="space-y-3">
-              <h1 class="font-semibold text-4xl">Engine Technical Services (ETS)</h1>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                This is our technical support team for the broad range of engines and auxiliary power units fitted to aircraft in the Emirates fleet, including:
-              </p>
-              <ul class="pl-5 text-gray-500 space-y-5">
-                <li class="list-disc">Rolls Royce
-                  <h1 class="pt-5">Trent 500 fitted to the Airbus A340-500</h1>
-                  <h1>Trent 700 fitted to the Airbus A330-200</h1>
-                  <h1>Trent 800 fitted to the Boeing 777-200/330 aircraft</h1>
-                </li>
-                <li class="list-disc">General Electric
-                  <h1 class="pt-5">CF6-80C2 fitted to the Airbus A310-300F</h1>
-                  <h1>GE90-115B/110 fitted to the Boeing 777-300ER/200LR</h1>
-                </li>
-                <li class="list-disc">CFM International
-                  <h1 class="pt-5">
-                    CFM56-5C4/P fitted to the A340-300
-                  </h1>
-                </li>
-                <li class="list-disc">Honeywell GTCP
-                  <h1 class="pt-5">331-250</h1>
-                  <h1>331-350(C)</h1>
-                  <h1>331-500</h1>
-                  <h1>332-600</h1>
-                </li>
-                <li class="list-disc">Auxiliary power units</li>
-              </ul>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                This team is responsible for providing technical support services to power plant and APU systems and accessories, including engine and APU condition monitoring.
-              </p>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                This involves engine health monitoring, and developing programmes to make sure the engines are overhauled to the highest standards as efficiently as we can, and are back on the wing within deadlines to minimise costs.
-              </p>
-            </div>
-            <!-- THe engine shop  -->
-            <div class="space-y-3">
-              <h1  class="font-semibold text-4xl">
-                The Engine Shops
-              </h1>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                The Engine Shops perform module replacement, QEC/DE-QEC, modification and minor repair of all engine types used on the Emirates fleet.
-              </p>
-              <p class="xl:w-[750px] text-gray-500 lg:w-[610px] md:w-[470px]">
-                They also perform QEC/DE-QEC of all APU types installed on Emirates aircraft and light maintenance of all thrust reversers installed across the fleet.
-              </p>
-            </div>
+            
             
           </div>
         </div>
@@ -322,6 +367,20 @@
     document.getElementById("sideBar").style.width = "0";
     document.getElementById("sideNav").style.width = "0";
   }
+  function toggleDropdown() {
+      const menu = document.getElementById("dropdown-menu");
+      menu.classList.toggle("hidden");
+    }
+  
+    // Close dropdown if clicked outside
+    document.addEventListener("click", function (event) {
+      const button = document.getElementById("menu-button");
+      const menu = document.getElementById("dropdown-menu");
+  
+      if (!button.contains(event.target) && !menu.contains(event.target)) {
+        menu.classList.add("hidden");
+      }
+    });
   </script>
 
 </body>
